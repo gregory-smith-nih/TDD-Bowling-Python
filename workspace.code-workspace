@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../ctrp-lambda-commons"
+		},
+		{
+			"path": "../BIAD/ctrp_micro_common"
 		}
 	],
 	"settings": {}

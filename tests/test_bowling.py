@@ -50,3 +50,17 @@ class TestTrialEnrichDisease(unittest.TestCase):
         expected_score = 58
         actual_score = bowling.score()
         self.assertEqual(expected_score, actual_score)
+
+    def test_bowling_turkey(self):
+        bowling = Bowling()
+        self._roll_many(bowling, 1, 4, 4, 0, 6, 4, 6, 3, 10, 3, 4, 10, 10, 10, 2, 8, 6)
+        expected_score = 146
+        actual_score = bowling.score()
+        self.assertEqual(expected_score, actual_score)
+
+    def test_perfect_game(self):
+        bowling = Bowling()
+        self._roll_many(bowling, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10)
+        expected_score = 300
+        actual_score = bowling.score()
+        self.assertEqual(expected_score, actual_score)
