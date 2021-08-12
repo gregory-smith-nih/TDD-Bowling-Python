@@ -18,6 +18,7 @@ class Bowling:
     def _roll(self, i):
         if i >= len(self.rolls): return 0
         return self.rolls[i]
+
     def _is_spare(self, i):
         return self._roll(i) + self._roll(i+1) == 10
 
