@@ -19,6 +19,9 @@ class Bowling:
             else: i = self._calculate_frame(i)
         return self.total
 
+    def _is_spare(self, i):
+        return self._roll(i) + self._roll(i+1) == 10
+
     def _is_strike(self, i):
         return self._roll(i) == 10
 
@@ -33,7 +36,4 @@ class Bowling:
     def _calculate_strike(self, i):
         self.total += self._roll(i) + self._roll(i+1) + self._roll(i+2)
         return i + 1
-
-    def _is_spare(self, i):
-        return self._roll(i) + self._roll(i+1) == 10
     
