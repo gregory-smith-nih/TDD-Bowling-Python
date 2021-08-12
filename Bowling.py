@@ -6,10 +6,6 @@ class Bowling:
     def roll(self, pins):
         self.rolls.append(pins)
 
-    def _roll(self, i):
-        if i >= len(self.rolls): return 0
-        return self.rolls[i]
-
     def score(self):
         self.total = 0
         i = 0
@@ -19,6 +15,9 @@ class Bowling:
             else: i = self._calculate_frame(i)
         return self.total
 
+    def _roll(self, i):
+        if i >= len(self.rolls): return 0
+        return self.rolls[i]
     def _is_spare(self, i):
         return self._roll(i) + self._roll(i+1) == 10
 
