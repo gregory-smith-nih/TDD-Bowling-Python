@@ -3,7 +3,7 @@ from Bowling import Bowling
 from ddt import ddt, data, unpack
 
 """
-Avoid the temptation to create an array/list of test cases as data.
+Resist the temptation to create an array/list of test cases as data.
 As shown below, this is more concise
 But, it doesn't document the requirements of the code.
 Be sure to break each test case out into its own method - with an appropriate name

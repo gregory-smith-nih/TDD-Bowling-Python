@@ -13,7 +13,6 @@ class Bowling:
             if self._is_spare(ball): ball = self._calculate_spare(ball)
             elif self._is_strike(ball): ball = self._calculate_strike(ball)
             else: ball = self._calculate_frame(ball)
-            if ball > len(self.rolls): break
         return self.total
 
     def _roll(self,ball):

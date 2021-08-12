@@ -48,10 +48,10 @@ class Bowling:
 
 # Bad Practice Example
 * See `tests/test_bowling_bad_practice.py`
-* Avoid the temptation to create an array/list of test cases as data.
+* Resist the temptation to create an array/list of test cases as data.
 * While it may be more concise
 * It doesn't document the requirements of the code.
 * Be sure to break each test case out into its own method - with an appropriate name
-- This is especially true of 'test case runners' or harnesses
-- The method name is reported when there's an error
-- This tells you precisely what use-case / requirement is failing.
+    - This is especially true of 'test case runners' or harnesses
+    - The method name is reported when there's an error
+    - This tells you precisely what use-case / requirement is failing.
